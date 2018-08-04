@@ -44,5 +44,3 @@ const server = new GraphQLServer({
 })
 
 server.start({port: process.env.PORT})
-console.log("[debugger] graphql is now running on http://localhost:"+process.env.PORT)
-console.log('[debugger] mongodb connection is mongodb://'+process.env.MONGODB_USER+':'+process.env.MONGODB_PASS+'@'+process.env.MONGODB_URI)
