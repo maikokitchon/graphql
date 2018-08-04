@@ -5,7 +5,8 @@ before_script:
     npm install lint && \
     cd .."
 script:
-  - "node node-lint build/"
+  - "cd build && \
+    node-lint build/"
 deploy:
   provider: heroku
   api_key:
