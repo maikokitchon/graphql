@@ -1,8 +1,11 @@
 language: node_js
 before_script:
-  - cd build && npm install && cd ..
+  - "cd build && \
+    npm install && \
+    npm install lint && \
+    cd .."
 script:
-  - cd build && npm test && cd ..
+  - "node-lint build/"
 deploy:
   provider: heroku
   api_key:
