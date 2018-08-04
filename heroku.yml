@@ -5,4 +5,4 @@ setup:
 build:
   languages: []
 run:
-  web: "/bin/sh -c npm run dev"
+  web: "/bin/sh -c npm\ run\ dev"
