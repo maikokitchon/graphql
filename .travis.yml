@@ -4,13 +4,14 @@ node_js:
 before_script:
   - "cd build && \
     npm install && \
-    npm install eslint && \
-    npm install vows && \
+    npm install eslint &&
     cd .."
 script:
   - "cd build && \
     eslint index.js && \
     cd .."
+after_script:
+  - "git checkout ."
 deploy:
   provider: heroku
   api_key:
