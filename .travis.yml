@@ -5,6 +5,7 @@ before_script:
   - "cd build && \
     npm install && \
     npm install lint && \
+    npm install vows && \
     cd .."
 script:
   - "cd build && \
