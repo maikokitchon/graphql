@@ -4,7 +4,7 @@ node_js:
 before_script:
   - "cd build && \
     npm install && \
-    npm install lint && \
+    npm install eslint && \
     npm install vows && \
     cd .."
 script:
