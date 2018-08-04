@@ -1,7 +1,7 @@
 import { GraphQLServer } from "graphql-yoga"
 import mongoose from "mongoose"
 
-const connection = mongoose.connect('mongodb://'+process.env.MONGODB_USER+':'+process.env.MONGODB_PASS+'@'+process.env.MONGODB_URI)
+mongoose.connect('mongodb://'+process.env.MONGODB_USER+':'+process.env.MONGODB_PASS+'@'+process.env.MONGODB_URI)
 
 const Schema = mongoose.Schema;
 
