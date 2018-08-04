@@ -29,10 +29,10 @@ type Query {
 
 const resolvers = {
   Query: {
-    product: async (_id) {
+    product: async (_id) => {
       return (await products.findOne(_id))
     },
-    products: async () {
+    products: async () => {
       return (await products.find({}))
     },
   },
