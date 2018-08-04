@@ -2,8 +2,7 @@ setup:
   addons:
     - plan: 'mongolab:sandbox'
       as: MONGODB
-  config:
-    MONGODB_PASS: Password1
-    MONGODB_USER: admin
 build:
   languages: []
+run:
+  web: "/bin/sh -c npm run dev"
