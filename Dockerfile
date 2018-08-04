@@ -1,5 +1,5 @@
 # Base image
-FROM node:7-alpine AS build
+FROM node:7-alpine
 
 # Copy all packages
 COPY \
