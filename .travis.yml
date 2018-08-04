@@ -9,7 +9,8 @@ before_script:
     cd .."
 script:
   - "cd build && \
-    node-lint index.js"
+    eslint index.js && \
+    cd .."
 deploy:
   provider: heroku
   api_key:
